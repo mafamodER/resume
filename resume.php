@@ -100,10 +100,27 @@ $names[8]="05.05.15";
 		<td><b>Дополнительное образования:</b></td>
 		<td><?php echo $names[6]?></td>
 	</tr>
+	<tr>
+		<td><b>Желаемая должность:</b></td>
+		<td>
+<?php 
+$name[11] = 'Станислав';
+$letterArray = array('А', 'Е', 'Ё', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я');
+if (in_array($name[11], $letterArray)) {
+ echo "Junior PHP";   // гласная
+} else {
+ echo "Intern PHP";   // согласная
+}
+
+?></td>
+	</tr>
 
 
 </table>
 </div>
+
+
+
 
 </body>
 
